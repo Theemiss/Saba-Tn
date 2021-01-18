@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% include 'partials/_topbar.html' %}
+{% include 'partials/_navbar.html' %}
+{% include 'partials/_hero.html' %}
 <div class="container-fluid">
  <section id="listings" class="py-5">
   <div class="container-fluid">
@@ -12,5 +15,7 @@
     </section>
 	</div>
 </div>
+	{% include 'partials/_footer.html' %}
+	
 {% endblock  %}
 

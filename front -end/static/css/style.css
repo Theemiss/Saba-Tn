@@ -21,11 +21,11 @@ a {
 }
 
 .fa-envelope-open {
-    color: white;
+    color: white !important;
 }
 
 .fa-phone {
-    color: white;
+    color: white !important;
 }
 
 i.fab {
@@ -50,6 +50,17 @@ i.fab:hover {
 
 
 /******************* NAVBAR ************/
+
+.fa-user-plus,
+.fa-sign-in-alt {
+    color: black !important;
+    font-weight: 600;
+}
+
+.fa-user-plus:hover,
+.fa-sign-in-alt:hover {
+    color: #1dbf73 !important;
+}
 
 .nav-link {
     color: black !important;
@@ -148,7 +159,7 @@ i.fab:hover {
     transition: all .5s;
 }
 
-input {
+.input-s {
     font-family: 'Inconsolata', monospace;
     margin: auto;
     top: 0;
@@ -173,29 +184,29 @@ input {
     letter-spacing: 0.1em;
 }
 
-input:hover {
+.input-s:hover {
     cursor: pointer;
 }
 
-input:focus {
+.input-s:focus {
     width: 300px;
     opacity: 1;
     cursor: text;
 }
 
-input:focus~.search {
+.input-s:focus~.search {
     right: -250px;
     background: #1dbf73;
     z-index: 6;
 }
 
-input:focus~.search::before {
+.input-s:focus~.search::before {
     top: 0;
     left: 0;
     width: 25px;
 }
 
-input:focus~.search::after {
+.input-s:focus~.search::after {
     top: 0;
     left: 0;
     width: 25px;
@@ -206,7 +217,7 @@ input:focus~.search::after {
     transform: rotate(-45deg);
 }
 
-input:focus~.search::placeholder {
+.input-s:focus~.search::placeholder {
     color: white;
     opacity: 0.5;
     font-weight: bolder;
@@ -240,4 +251,23 @@ input:focus~.search::placeholder {
 .logo-footer {
     width: 200px;
     margin: 10px;
+}
+
+
+/********* Announce **********/
+
+.badge {
+    background-color: #1dbf73;
+}
+
+.listing-heading {
+    color: black;
+}
+
+.text-primary {
+    color: black !important;
+}
+
+.fas {
+    color: #1dbf73;
 }
