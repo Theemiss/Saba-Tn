@@ -1,0 +1,60 @@
+ {% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+{% include 'partials/_topbar.html' %}
+{% include 'partials/_navbar.html' %}
+ 
+ 	<link rel="stylesheet" href="{% static 'css/signup.css' %}">
+
+ <section id="register" class="bg-light py-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card">
+               <div class="container-fluid box">
+                    <center>
+                    <h1>Sign Up</h1>
+                                        </center>
+
+                           <div class="form-group">
+                  <label for="first_name">First Name</label>
+                  <input type="text" name="first_name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="last_name">Last Name</label>
+                  <input type="text" name="last_name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="username">Phone Number</label>
+                  <input type="text" name="username" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="password2">Password</label>
+                  <input type="password" name="password" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="password">Confirm Password</label>
+                  <input type="password" name="password2" class="form-control" required>
+                </div>
+                <input type="submit" value="Register" class="btn btn-secondary btn-block">
+                <center>
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook">Register Using Facebook</i></a></li>
+                        </ul>
+                        </center>
+                    </div>     
+								 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  	{% include 'partials/_footer.html' %}
+
+{% endblock  %} 

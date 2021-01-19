@@ -5,10 +5,10 @@ body {
 }
 
 .container {
-    text-align: center;
     margin: auto;
     padding: 20px;
     transition: 0.25s;
+    align-items: center;
 }
 
 .card {
@@ -16,7 +16,8 @@ body {
 }
 
 .box input[type="text"],
-.box input[type="password"] {
+.box input[type="password"],
+.box input[type="email"] {
     border: 0;
     background: none;
     display: block;
@@ -38,7 +39,8 @@ body {
 }
 
 .box input[type="text"]:focus,
-.box input[type="password"]:focus {
+.box input[type="password"]:focus,
+.box input[type="email"]:focus {
     width: 65%;
     border-color: #2ecc71;
 }
@@ -98,13 +100,13 @@ a.socialIcon:hover,
 }
 
 .social-circle li a {
-    display: inline-block;
-    margin: 0 auto 0 auto;
-    border-radius: 50%;
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    font-size: 20px
+    display: block;
+    border-radius: 10px;
+    padding: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .social-circle li i {

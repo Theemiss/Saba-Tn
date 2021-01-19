@@ -3,13 +3,20 @@
 {% block content %}
 {% load static %}
 {% include 'partials/_topbar.html' %}
+{% include 'partials/_navbar.html' %}
+
 	<link rel="stylesheet" href="{% static 'css/login.css' %}">
-        <form class="box">
-		<div class="container-fluid">
-		    <a  href="#"><img src="{% static 'images/logo.png'%}" class="login-logo" alt="">
-			</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card">
+		    <div class="container-fluid box">
+		        <a  href="#"><img src="{% static 'images/logo.png'%}" class="login-logo" alt=""></a>
+			
                     <h1>Login</h1>
-                    <p class="text-muted"> Please enter your login and password!</p> 
+                    <p class="text-muted"> Please enter your login and password!</p>
+                    <form class="">
 					<input type="text" name="" placeholder="Username"> 
 					<input type="password" name="" placeholder="Password"> <a class="forgot text-muted" href="#">Forgot password?</a> 
 					<input type="submit" name="" value="Login" href="#">
@@ -17,11 +24,14 @@
                         <ul class="social-network social-circle">
                             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i> </a></li>
                         </ul>
-								  <div class="text-center text-white container-fluid copy">
-    Copyright &copy;
-    <span class="year"></span> Saba Tn
-	  <div>
-                    </div>
-        </form>
+                    </div> 
+                    </form>
+								 
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+	{% include 'partials/_footer.html' %}
 
 {% endblock  %}
