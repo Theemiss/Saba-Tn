@@ -24,6 +24,10 @@
     .btn-primary:hover {
         border-color: #1dbf73 !important;
     }
+    
+    .fa-plus {
+        color: black !important;
+    }
     /************** TOP BAR **************/
     
     .top-bar {
@@ -61,6 +65,11 @@
         .top-bar>div {
             text-align: center;
         }
+    }
+    
+    i {
+        padding: 2px;
+        margin: 2px;
     }
     /******************* NAVBAR ************/
     
@@ -104,6 +113,52 @@
         }
         .navbar-collapse {
             margin: auto;
+        }
+    }
+    
+    .rounded-circle {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #1dbf73 !important;
+        border-top-color: rgb(222, 226, 230);
+        border-right-color: rgb(222, 226, 230);
+        border-bottom-color: rgb(222, 226, 230);
+        border-left-color: rgb(222, 226, 230);
+    }
+    
+    .btn {
+        text-align: center;
+        margin: 5px;
+    }
+    
+    .btn-primary:hover {
+        background-color: transparent !important;
+        color: black
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .btn-an {
+            text-align: center;
+            background-color: white !important;
+            color: black;
+            border: none;
+        }
+        .btn-an:hover {
+            color: black;
+        }
+        .rounded-circle {
+            border-radius: 0% !important;
+            width: 50px;
+            height: 50px;
+            border: none !important;
+            border-top-color: rgb(222, 226, 230);
+            border-right-color: rgb(222, 226, 230);
+            border-bottom-color: rgb(222, 226, 230);
+            border-left-color: rgb(222, 226, 230);
+            -webkit-border-radius: 0% !important;
+            -moz-border-radius: 0% !important;
+            -ms-border-radius: 0% !important;
+            -o-border-radius: 0% !important;
         }
     }
     /******* hero *************/
