@@ -1,3 +1,57 @@
 # Saba-Tn
 
 sudo -u postgres psql
+
+### Available page 
+
+* Media Folder Disbaled
+
+* ALL page View and URLS Implemented
+
+index : 127.0.0.1:8000
+
+127.0.0.1:8000/login
+
+127.0.0.1:8000/signup
+
+http://127.0.0.1:8000/product
+
+### CSS Template
+* __footer : footer 
+
+```
+{% include 'partials/_footer.html' %}
+```
+
+* __navbar : navbar
+
+```
+{% include 'partials/_navbar.html' %}
+```
+
+* __hero : hero Section and Search bar
+
+```
+{% include 'partials/_hero.html' %}
+```
+
+* __topbar : topbar
+
+```
+{% include 'partials/_topbar.html' %}
+```
+
+* __navbarlog : navbar case user logged in  
+
+### Signup
+* Signup.html already implemented
+* signupV2.html change include to it to test 
+
+#### STATIC
+* PATH mpp/static
+
+any changed in layout or anything made there 
+
+* /static
+
+Collected by django any change there will not work
