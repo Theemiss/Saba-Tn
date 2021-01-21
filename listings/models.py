@@ -6,7 +6,7 @@ from categories.models import Category
 
 class BaseListing(models.Model):
     """
-    still need to check what to do if user delted
+    still need to check what to do if user deleted
     """
     user = models.ForeignKey(User, on_delete=models.DO_NOTHING)
     title = models.CharField(max_length=200)
