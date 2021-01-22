@@ -55,3 +55,23 @@ any changed in layout or anything made there
 * /static
 
 Collected by django any change there will not work
+
+
+
+#### allauth urls:
+accounts/signup/
+accounts/login/accounts/logout/
+accounts/password/change/
+accounts/password/set/
+accounts/inactive/
+accounts/email/
+accounts/confirm-email/
+accounts/confirm-email/<key>/
+accounts/password/reset/
+accounts/password/reset/done/
+accounts/password/reset/key/<uidb36>/
+accounts/password/reset/key/done/
+accounts/social/login/cancelled/
+accounts/social/login/error/
+accounts/social/signup/
+accounts/social/connections/
